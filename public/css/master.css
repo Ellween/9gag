@@ -1,0 +1,1143 @@
+/* NICE PORN */
+/* Leila Smith, Nekane & Taylor Sands – Crazy Ride */
+
+
+
+
+/*---------------*/
+/* All*/
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  font-family: 'Open Sans', sans-serif;
+}
+
+
+/*---------------*/
+/* Header*/
+
+header{
+  height: 3em;
+  background-color: #000;
+}
+
+.nav_list{
+  display: inline-block;
+  position: relative;
+  width: 50%;
+  height: 1em;
+
+}
+
+.nav_ul {
+  position: absolute;
+  bottom: 50%;
+  height: 1em;
+  width: 100%;
+  transform: translateY(-50%);
+}
+
+.nav_ul li {
+  display: inline-block;
+  color: rgba(255,255,255,0.6);
+  margin-left: 4%;
+  font-size: 14px;
+  font-family: 'Open Sans', sans-serif;
+}
+
+.nav_ul li:hover {
+  color: #fff;
+  cursor: pointer;
+
+}
+
+.nav_container {
+  margin: 0 auto;
+  width: 1140px;
+}
+
+.nav_logo {
+  height: 3em;
+  width: 3em;
+  display: inline-block;
+
+}
+
+.nav_logo img{
+  height: 100%;
+  width: 100%;
+}
+
+/*log in Search box sign Up */
+/*--------------------------*/
+.search-login-sign {
+  display: inline-block;
+  width: 45%;
+}
+
+.easy {
+  list-style: none;
+  width: 100%;
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  font-family: 'Open Sans', sans-serif;
+}
+
+.easy li {
+  color: #fff;
+  color: rgba(255,255,255,0.6);
+  display: inline-block;
+  margin-left: 9%;
+
+}
+
+.user-box {
+  height: 3em;
+  width: 17rem;
+  position: relative;
+  float: right;
+}
+
+.sign-up {
+  border: 1px solid #09f;
+  background-color: #09f;
+  padding: 0.2em 0.9em;
+  color: #fff;
+  border-radius: 2px;
+  font-weight: 700;
+  position: absolute;
+  top: 50%;
+  left: 61%;
+  transform: translateY(-50%);
+  font-family: 'Open Sans', sans-serif;
+}
+
+/*---- Search Box ----*/
+.search-box {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  left: 20%;
+}
+
+.search-box p {
+  color: #999;
+  font-size: 20px;
+}
+
+.search-box-panel {
+  position: absolute;
+  width: 200px;
+  height: 0px;
+  z-index: 20;
+  top: 100%;
+  left: 7%;
+  overflow: hidden;
+  box-shadow: 0 5px 10px rgba(0, 0, 0, .2);
+}
+
+.search-box-panel.show {
+  height: 35px;
+
+}
+
+.search-box-panel>input {
+  width: 100%;
+  height: 35px;
+}
+
+.search-icon {
+  cursor: pointer;
+}
+
+/*-- End Search box  -- */
+
+
+/* Main Structure */
+/*----------------*/
+.posts {
+  margin: 0 auto;
+  width: 1140px;
+}
+
+.left-side {
+  display: inline-block;
+  width: calc(100% / 3);
+  float: left;
+  padding: 24px 20px 0 0;
+}
+
+
+
+
+.right-side {
+  display: inline-block;
+  width: calc(100% / 3);
+  float: left;
+  padding: 24px 0px 0 0;
+}
+
+/* Left Side bar */
+/*----------------*/
+
+.up h3 {
+  font-size: 12px;
+  color: #999;
+  font-family: 'Open Sans', sans-serif;
+  font-weight: 700;
+  text-transform: uppercase;
+  margin-bottom: 8px;
+}
+
+.up ul {
+  list-style: none;
+}
+
+.up ul li {
+  display: block;
+  height: 36px;
+  padding: 8px;
+  font-family: 'Open Sans', sans-serif;
+  font-size: 14px;
+}
+
+.icon-image img{
+  width: 24px;
+  height: 24px;
+}
+
+.up ul li:active{
+  font-weight: 700;
+}
+
+
+.up ul i {
+  margin-right: 5%;
+  font-size: 20px;
+  vertical-align: middle;
+}
+
+.link {
+  width: 100%;
+  padding: 8px;
+}
+
+.link a {
+  font-size: 12px;
+  line-height: 18px;
+  color: #999;
+  text-decoration: none;
+  font-family: 'Open Sans', sans-serif;
+}
+
+
+
+.site-date {
+  padding: 8px;
+}
+
+.site-date p {
+  font-size: 12px;
+  color: #999;
+  font-family: 'Open Sans', sans-serif;
+}
+
+
+.test-left {
+  height: calc(100vh - 3em);
+  overflow: hidden;
+  width: 233px;
+  display: inline-block;
+  float: left;
+}
+
+.left-side {
+  overflow: auto;
+  height: 100%;
+  width: 100%;
+}
+
+.left-side::-webkit-scrollbar{
+  display: none;
+}
+/* righ side width */
+/*-----------------*/
+
+.right-side {
+  width: 233px;
+  overflow: hidden;
+}
+
+.right-side ul {
+  list-style: none;
+}
+
+.right-side li {
+  margin-bottom: 15%;
+}
+
+.right-side img {
+  width: 100%;
+  height: 105px;
+}
+
+
+
+
+/*posts section */
+/*--------------*/
+
+.main-post {
+  width: 674px;
+  float: left;
+  display: inline-block;
+  height: calc(100vh - 3em);
+  overflow: hidden;
+}
+
+.test-single {
+    padding: 24px 20px 0 0;
+    overflow: auto;
+    height: 100%;
+    width: 100%;
+}
+
+.header h1{
+  font-size : 2em;
+}
+
+.post-section {
+  padding-top: 8px;
+  padding-bottom: 8px;
+  display: inline-block;
+}
+
+.post-section img  {
+  width: 100%;
+}
+
+.test-single article {
+  margin-bottom: 3%;
+}
+
+/*---------------*/
+/*Log in */
+/*---------------*/
+
+.login-container{
+  margin: 1% auto;
+  border: 1px solid white;
+  width: 28%;
+  height: 55%;
+  background-color: white;
+  transform: translateX(-100%);
+  transition: all 0.5s ease-in-out;
+  border-radius: 5px;
+  padding: 44px;
+
+}
+
+.log {
+  visibility: hidden;
+  position: fixed;
+  width: 100%;
+  height: 100%;
+  z-index: 10;
+  background-color: rgba(0, 0, 0, 0.8);
+  transition: all 0.3s ease;
+  opacity: 0;
+  font-family: 'Open Sans', sans-serif;
+
+}
+
+.log.active{
+  display: block;
+  visibility: visible;
+  opacity: 1;
+}
+
+.log.active > .login-container{
+    transform: translateX(0%);
+}
+
+/* test */
+/*0-----*/
+
+.register {
+  visibility: hidden;
+  position: fixed;
+  width: 100%;
+  height: 100%;
+  z-index: 10;
+  background-color: rgba(0, 0, 0, 0.8);
+  transition: all 0.3s ease;
+  opacity: 0;
+  font-family: 'Open Sans', sans-serif;
+
+}
+
+.register.active{
+  display: block;
+  visibility: visible;
+  opacity: 1;
+}
+
+.register.active > .login-container{
+    transform: translateX(0%);
+}
+
+/*---Upload--*/
+.upload {
+  visibility: hidden;
+  position: fixed;
+  width: 100%;
+  height: 100%;
+  z-index: 10;
+  background-color: rgba(0, 0, 0, 0.8);
+  transition: all 0.3s ease;
+  opacity: 0;
+  font-family: 'Open Sans', sans-serif;
+
+}
+
+.upload.active{
+  display: block;
+  visibility: visible;
+  opacity: 1;
+}
+
+.upload.active > .login-container{
+    transform: translateX(0%);
+}
+
+.upload-btn {
+  border: 1px solid #09f;
+  background-color: #09f;
+  padding: 0.2em 0.9em;
+  color: #fff;
+  border-radius: 2px;
+  font-weight: 700;
+  position: absolute;
+  top: 50%;
+  left: 61%;
+  transform: translateY(-50%);
+  font-family: 'Open Sans', sans-serif;
+  cursor: pointer;
+}
+
+.p-upload {
+  font-size: 14px;
+}
+
+/*-- Log out--*/
+.log-out {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  left: 39%;
+  color:#999;
+  font-family: 'Open Sans', sans-serif;
+  cursor: pointer;
+}
+
+
+.drop-down-section {
+  position: relative;
+  display: none;
+}
+
+ .drop-down-section.action  {
+   list-style: none;
+   top: 48px;
+   left: 70px;
+   background-color: white;
+   position: absolute;
+   width: 155px;
+   padding: 8px 0;
+   height: auto;
+   border: 1px solid black;
+   display: block;
+   z-index: 10000;
+
+ }
+
+
+
+
+.drop-down-section ul li {
+  padding: 0 16px;
+  font-family: 'Open Sans', sans-serif;
+  line-height: 34px;
+  list-style: none;
+}
+
+.drop-down-section a {
+  font-size: 14px;
+  color: black;
+  text-decoration: none;
+}
+/*-- end Upload --*/
+
+.sign-up{
+  cursor: pointer;
+}
+
+
+.btn-close {
+  color: #ccc;
+  float:right;
+  font-size: 30px;
+}
+
+.btn-close:hover {
+  color: black;
+  cursor: pointer;
+}
+
+.section-inside {
+  font-family: 'Open Sans', sans-serif;
+}
+
+.inside {
+  height: 100%;
+}
+
+.section-inside p {
+  font-size: 13px;
+  color: #999;
+  margin-top: 4%;
+}
+
+.Fb-Google {
+  width: 100%;
+  display: inline-block;
+  margin-top: 6%;
+  margin-bottom: 3%;
+
+}
+
+.fb {
+  float: left;
+  display: inline-block;
+  border: 1px solid #2D72D9;
+  color: white;
+  margin-left: 6%;
+  border-radius: 5px;
+}
+
+.fb-h1 {
+  background-color: #2D72D9;
+  width: 100%;
+  height: 100%;
+  padding: 5px;
+}
+
+.Google {
+  float: left;
+  display: inline-block;
+  border: 1px solid red;
+  margin-left: 11%;
+  width: 40%;
+  border-radius: 5px;
+}
+
+.Google-h1 {
+  background-color: red;
+  padding: 5px;
+  color: white;
+}
+
+.login-main {
+  color: #999;
+  cursor: pointer;
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  left: 35%;
+  font-family: 'Open Sans', sans-serif;
+}
+
+.login-hr {
+  color: #999;
+}
+
+/*---- login form ---*/
+
+
+.enail-form label {
+  font-weight: bold;
+  font-size: 14px;
+}
+
+.login-email{
+  width: 80%;
+  padding: 9px;
+  border-radius: 2px;
+  border: 1px solid #ddd;
+}
+
+.login-password {
+  width: 80%;
+  padding: 9px;
+  border-radius: 2px;
+  border:1px solid #ddd;
+}
+
+.form-section {
+  height: 100%;
+}
+
+.login-form-section div {
+  margin-top: 5%;
+}
+
+.login-form-section p {
+  font-size: 13px;
+  color: #999;
+  margin: 5% 0;
+}
+
+.login-form-section label {
+  font-weight: bold;
+  font-size: 14px;
+}
+
+/*--register -- */
+
+.register-form-section div{
+  margin-top: 5%;
+}
+
+.name-form input{
+  padding: 9px;
+  width: 80%;
+  border-radius: 2px;
+  border: 1px solid #ddd;
+}
+
+.register-email {
+  width: 80%;
+  padding: 9px;
+  border-radius: 2px;
+  border: 1px solid #ddd;
+}
+
+.register-pass{
+  width: 80%;
+  padding: 9px;
+  border-radius: 2px;
+  border: 1px solid #ddd;
+}
+
+
+
+.submit-form {
+  color: white;
+  background-color: #007acc;
+  width: 15%;
+  border-radius: 2px;
+  border: 1px solid #007acc;
+  margin-top: 6%;
+  padding: 8px;
+  font-weight: bold;
+}
+
+/*---sign up ---*/
+
+.sign-up-heading {
+  margin-bottom: 5%;
+}
+
+
+/*--- Setting Section ---*/
+
+.User-Main {
+  padding: 24px 20px 0 0;
+  overflow: hidden;
+  height: calc(100vh - 3em);
+}
+
+.left-side-section {
+  display: inline-block;
+  float: left;
+  width: 30%;
+}
+
+.Setting-ul {
+  font-family: 'Open Sans', sans-serif;
+  font-weight: bold;
+  margin-top: 34%;
+  line-height: 39px;
+}
+
+.Setting-ul li a {
+  text-decoration: none;
+  color: #999;
+  font-size: 15px;
+}
+
+
+/*--- Righ Side ---*/
+
+.righ-side-section {
+  display: inline-block;
+  float: left;
+  width: 70%;
+  overflow: auto;
+  height: 100%;
+}
+
+.righ-side-section::-webkit-scrollbar{
+  display: none;
+}
+
+.update-form-heading h1 {
+  font-size: 35px;
+  font-family: 'Open Sans', sans-serif;
+}
+
+.profile-update-Form {
+  margin-top: 15%;
+  font-family: 'Open Sans', sans-serif;
+}
+
+.Update-avatar-field {
+  margin-top: 5%;
+}
+
+.update-avatar-p {
+  font-size: 14px;
+  font-weight: bold;
+}
+
+.Update-avatar-field img {
+  display: inline-block;
+  float: left;
+  margin-right: 5%;
+  margin-top: 1%;
+  width: 100px;
+  height: auto;
+}
+
+.upload-rules {
+  font-size: 12px;
+  color: #999;
+  margin-top: 7%;
+  line-height: 27px;
+  height: 95px;
+}
+
+.upload-rules-p {
+  font-size: 12px;
+}
+
+.update-name label {
+  font-size: 14px;
+  font-weight: bold;
+  font-family: 'Open Sans', sans-serif;
+
+}
+
+.update-name-input {
+  width: 84%;
+  border: 1px solid #ddd;
+  margin-top: 2%;
+  padding: 10px;
+}
+
+.update-name p {
+  margin-top: 1%;
+  font-size: 12px;
+  color: #999;
+  font-family: 'Open Sans', sans-serif;
+}
+
+/*--Gender update--*/
+
+.gender-choose{
+  margin-top: 20px;
+}
+
+.gender-choose label{
+  font-weight: bold;
+  font-size: 14px;
+}
+
+.gender-select {
+  width: 26%;
+  padding: 10px;
+  border: 1px solid #ddd;
+  margin-top: 1%;
+  font-weight: bold;
+  color: gray;
+}
+
+/*-- birthday --*/
+
+.Birthday {
+  margin-top: 20px;
+
+}
+
+.Birthday label {
+  font-weight: bold;
+  font-size: 14px;
+}
+
+.Birthday input {
+  border: 1px solid #ddd;
+  padding: 10px;
+  margin-right: 1%;
+  margin-top: 1%;
+}
+
+.birth-month {
+  width: 20%;
+}
+
+.birth-day {
+  width: 20%;
+}
+
+.birth-year {
+  width: 37%;
+}
+
+/*-- countires --*/
+
+.Country-list {
+  margin-top: 20px;
+}
+
+.Country-list label {
+  font-weight: bold;
+  font-size: 14px;
+}
+
+.countries-select {
+  padding: 10px;
+  font-weight: bold;
+  margin-top: 1%;
+  border: 1px solid #ddd;
+}
+
+.Country-list p {
+  font-size: 12px;
+  color: #999;
+  margin-top: 1%;
+}
+
+/*--About-me --*/
+
+.About-you {
+  margin-top: 20px;
+}
+
+.About-you label {
+  font-size: 14px;
+  font-weight: bold;
+}
+
+.about-text {
+  width: 438px;
+  height: 100px;
+  padding: 10px;
+  border: 1px solid #ddd;
+  font-size: 15px;
+  margin-top: 1%;
+}
+
+/*-- Social Networks --*/
+
+.Social-networks {
+  margin-top: 20px;
+}
+
+.Social-networks label {
+  font-weight: bold;
+  font-size: 14px;
+}
+
+/*-- Save --*/
+
+.Save {
+  padding-bottom: 100px;
+}
+
+.Save button {
+  margin-top: 6%;
+  border: 1px solid #09f;
+  background-color: #09f;
+  padding: 0.8em 0.9em;
+  color: #fff;
+  border-radius: 2px;
+  font-weight: 700;
+}
+
+/*-- Password Change --*/
+
+.password-right-section {
+  display: inline-block;
+  float: left;
+  padding: 24px 20px 0 0;
+  margin-top: 7%;
+  width: 60%;
+}
+
+.pasword-change-heading h1 {
+  font-size: 36px;
+}
+
+.password-change {
+  margin-top: 5%;
+}
+
+.password-change input {
+  padding: 10px;
+  width: 100%;
+  margin-top: 1%;
+  border: 1px solid #ddd;
+  border-radius: 2px;
+}
+
+.password-change label {
+  font-size: 14px;
+  font-weight: bold;
+}
+
+/*-- Account form --*/
+
+.account-change-form {
+  margin-top: 7%;
+}
+
+.account-right-section {
+  display: inline-block;
+  float: left;
+  padding: 24px 20px 0 0;
+  margin-top: 7%;
+  width: 60%;
+}
+
+.account-update-heading h1 {
+  font-size: 36px;
+}
+
+.account-change-form label{
+  font-size: 14px;
+  font-weight: bold;
+}
+
+.account-change-form div {
+  margin-top: 7%;
+}
+
+.account-change-form input  {
+  padding: 10px;
+  width: 100%;
+  border: 1px solid #ddd;
+  margin-top: 1%;
+  border-radius: 2px;
+}
+
+.account-change-form select {
+  padding: 10px;
+  font-weight: bold;
+}
+
+
+.account-change-form p {
+  font-size: 12px;
+  color: #999;
+  margin-top: 1%;
+}
+
+/*---Post Upload ---*/
+
+.picture-upload {
+  height: 240px;
+  width: 97%;
+  display: inline-block;
+  border: 1px solid #ddd;
+  cursor: pointer;
+  position: relative;
+}
+
+.pic-upload-container {
+  text-align: center;
+  margin-top: 36%;
+  line-height: 1px;
+}
+
+.upload_image {
+  background-image: url('/images/upload/pic-upload.png');
+  background-size: 100%;
+  background-repeat: no-repeat;
+  height: 64px;
+  width: 62px;
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+  top: 21%;
+}
+
+
+.default-upload-button{
+  display: none;
+}
+
+
+
+.picture-upload-btn {
+  margin-top: 6%;
+  border: 1px solid #09f;
+  background-color: #09f;
+  padding: 0.8em 0.9em;
+  color: #fff;
+  border-radius: 2px;
+  font-weight: 700;
+}
+
+.URL {
+  position: relative;
+  height: 117px;
+  width: 137px;
+  border: 1px solid #ddd;
+  display: inline-block;
+  float: left;
+  margin-top: 5%;
+}
+
+.URL img {
+  width: 60px;
+  height: 60px;
+  top: 31.5px;
+  position: absolute;
+  left: 0;
+  margin: 0 auto;
+  right: 0;
+  bottom: 0;
+}
+
+.URL p {
+    position: absolute;
+    top: 93px;
+    left: 24px;
+    font-size: 14px;
+}
+
+.past-video {
+  margin-left: 10px;
+  margin-right: 10px;
+}
+
+.second-step {
+
+  display: none;
+}
+
+.second-step.active {
+  display: block;
+  height: 100%;
+}
+
+.first-step.active {
+  display: block
+}
+
+.first-step{
+  display: none;
+}
+
+
+
+
+.upload-container {
+  margin: 1% auto;
+  border: 1px solid white;
+  width: 28%;
+  height: 55%;
+  background-color: white;
+  transform: translateX(-100%);
+  transition: all 0.5s ease-in-out;
+  border-radius: 5px;
+  padding: 44px;
+}
+
+.upload-heading{
+  margin-bottom: 5%;
+}
+
+.second-p-upload {
+  font-size: 13px;
+}
+
+.second-upload-heading h3{
+  font-size: 24px;
+}
+
+.picture {
+  display: inline-block;
+  float: left;
+  border: 1px solid black;
+  height: 100px;
+  position: absolute;
+  width: 100px;
+  top: 15px;
+  left: 18px;
+}
+
+.title-for-picture textarea {
+  position: absolute;
+  left: 130px;
+  border: none;
+  top: 18px;
+  padding: 11px;
+  outline: none;
+  color: #999;
+  font-size: 16px;
+}
+
+.picture-title {
+  height: 8em;
+  position: relative;
+  border-bottom: 1px solid #ddd;
+}
+
+.second-upload-heading {
+  height: 4em;
+}
+
+.title {
+  display: inline-block;
+  float: left;
+}
+
+.upload-description {
+  border: 1px solid #ddd;
+  height: calc(100% - 4em);
+}
+
+.picture-tags {
+  position: relative;
+  height: 3em;
+  padding: 10px;
+  border-bottom: 1px solid #ddd;
+}
+
+.picture-tags label {
+  font-size: 15px;
+}
+
+.picture-tags input {
+  padding: 6px;
+  margin-left: 3%;
+  border: none;
+  width: 90%;
+  outline: none;
+}
