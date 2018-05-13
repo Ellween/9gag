@@ -338,7 +338,7 @@ header{
   transform: translateX(-100%);
   transition: all 0.5s ease-in-out;
   border-radius: 5px;
-  padding: 44px;
+  padding: 1.5%;
 
 }
 
@@ -576,14 +576,14 @@ header{
 
 .login-email{
   width: 80%;
-  padding: 9px;
+  padding: 2%;
   border-radius: 2px;
   border: 1px solid #ddd;
 }
 
 .login-password {
   width: 80%;
-  padding: 9px;
+  padding: 2%;
   border-radius: 2px;
   border:1px solid #ddd;
 }
