@@ -41,19 +41,20 @@ class PostController extends Controller
 
       if($post){
         $all_tags = $request->get('tags');
-        // $tagid = [];
-        $explode_tags = explode(',' , implode($all_tags));
+        $tagid = [];
+        $explode_tags = explode(' ' , implode($all_tags));
 
         foreach($explode_tags as $explode_tag)
         {
           $tag = Tag::firstOrCreate(['name'=>$explode_tag]);
-          // if($tag){
-          //   $tagid[] = $tag->id;
-          //
-          //
-          // }
+          if($tag){
+            $tagid[]= $tag->id;
+          }
+
+
         }
-        $post->tags()->sync($request->explode_tags);
+
+        $post->tags()->sync($tagid);
 
 
 

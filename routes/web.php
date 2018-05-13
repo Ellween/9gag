@@ -39,3 +39,6 @@ Route::post('/settings/account','UserController@storeaccount');
 
 // admin ylis space
 Route::get('/admin/index', 'AdminController@index');
+Route::get('/admin/category','AdminController@getCategory');
+Route::post('/admin/category','AdminController@storeCategory');
+Route::get('/admin/users','AdminController@getUsers');

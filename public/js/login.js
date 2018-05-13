@@ -50,10 +50,40 @@ var login_form = {
        });
 
 
+
+
+  }
+}
+
+var tagInputGenerator = {
+  construct: function() {
+    this.bindUiAction();
+  },
+
+  bindUiAction: function() {
+    var that = this;
+
+    $('.upload_tags').on('keydown', function(e) {
+      if(e.keyCode == 13){
+        that.appendInput($('.upload_tags').val());
+        $('upload_tags').val(' ');
+        return false;
+      }
+    })
+  },
+
+  appendInput: function(value) {
+    $('.tag_container').prepend(`
+        <span class="tag">
+
+          <input class = "uploaded_tag" type="text" name="tags[]" value="`+ value + `" multiple ="multiple" readonly>
+        </span>
+      `);
   }
 }
 
 
 $(document).ready(function(){
    login_form.construct();
+   tagInputGenerator.construct();
 });

@@ -63,8 +63,9 @@
 
             <div class="picture-tags">
               <label for="tags">Tag</label>
-              <input class = 'upload_tags' type="text" name="tags[]" value="" placeholder="tag1,tag2,tag3" multiple ='multiple'>
-            </div>
+              <div class="tag_container">
+                <input class = 'upload_tags' type="text" name="tags[]" value="" placeholder="tag1,tag2,tag3" multiple ='multiple'>
+              </div>
           </div>
 
           <div class="upload_btn">

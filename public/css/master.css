@@ -1141,3 +1141,26 @@ header{
   width: 90%;
   outline: none;
 }
+
+.tag_container{
+  display: inline-block;
+  width: 88%;
+}
+
+.upload_tags{
+  display: inline-block;
+  width: 3rem !important;
+}
+
+.tag{
+  display: inline-block;
+  float: left;
+  width: auto;
+}
+
+.uploaded_tag{
+  display: inline-block;
+  float: left;
+  width: 3rem !important;
+  background: blue;
+}
