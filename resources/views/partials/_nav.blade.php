@@ -1,7 +1,7 @@
 <header>
   <div class="nav_container">
     <div class="nav_logo">
-       <img src = '/images/nav_logo.png' alt = "9gag logo">
+       <a href = '/'><img src = '/images/nav_logo.png' alt = "9gag logo"></a>
     </div>
     <div class= "nav_list">
       <ul class = 'nav_ul'>

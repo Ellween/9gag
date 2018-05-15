@@ -12,12 +12,16 @@ class AdminController extends Controller
 
     public function index()
     {
-        return view('admin.category_section');
+
+      $categories = Category::all();
+      return view('admin.category_section',compact('categories'));
 
     }
 
     public function getCategory() {
-      return view('admin.category_section');
+
+      $categories = Category::all();
+      return view('admin.category_section',compact('categories'));
     }
 
     public function getUsers() {
@@ -40,7 +44,7 @@ class AdminController extends Controller
       Image::make($category_pic)->resize(24,24)->save($image_location);
       }
 
-      
+
       $category = Category::create([
         'category' =>request('category'),
         'image' => $image_filename,

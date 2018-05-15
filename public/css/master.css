@@ -1164,3 +1164,46 @@ header{
   width: 3rem !important;
   background: blue;
 }
+
+/* Category Choose */
+
+.third-step {
+
+  display: none;
+}
+
+.third-step.active {
+  display: block;
+  height: 100%;
+}
+
+.third-upload-description{
+  height: 86%;
+  position: relative;
+}
+
+.category_list {
+  margin-top: 3%;
+  border: 1px solid #ddd;
+  height: 100%;
+  position: relative;
+}
+
+.category_list li {
+  height: 17%;
+  padding: 15px;
+  list-style: none;
+}
+
+.category_list img {
+  width: 63px;
+  float: left;
+}
+
+.category_list p{
+  left: 104px;
+  float: left;
+  font-size: 22px;
+  font-weight: bold;
+  top: 23px;
+}

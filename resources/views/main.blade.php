@@ -28,11 +28,9 @@
 
 
 
-        <div class = 'main-post'>
-
+      <div class="main-post">
         @yield('content')
-
-        </div>
+      </div>
 
         @include('sidebars.right-side')
 

@@ -9,6 +9,7 @@ class Post extends Model
     protected $fillable = [
       'title',
       'picture',
+      'category',
     ];
 
     public function tags(){

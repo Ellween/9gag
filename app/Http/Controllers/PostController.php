@@ -10,11 +10,15 @@ use Image;
 class PostController extends Controller
 {
 
+
+
+
   public function store(Request $request)
   {
       $this->validate($request, array(
           'title' => 'required|max:255',
           'picture' => 'required',
+          'category' => 'required',
       ));
 
 
@@ -30,7 +34,9 @@ class PostController extends Controller
         $post =  Post::create([
         'title' => request('title') ,
         'picture' => $pic_filename,
+        'category' => request('category'),
         ]);
+
 
 
 

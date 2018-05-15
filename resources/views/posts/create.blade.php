@@ -69,14 +69,42 @@
           </div>
 
           <div class="upload_btn">
-            <button type="submit" name="button">upload</button>
+            <button class = 'next' type="button" name="next">next</button>
           </div>
         </div>
+      </div>
+
+      <div class="third-step">
+        <div class="third-upload-heading">
+          <span class ='btn-close'>&times;</span>
+          <h3>Pick a Section</h3>
+          <p>Submitting to the right section to make sure your post gets the right exposure it deserves!</p>
+        </div>
+
+        <div class="third-upload-description">
+          <div class="category_list">
+            @foreach ($categories as $category)
+              <li>
+            <img src="{{asset('images/category_images/' . $category->image)}}" alt="">
+            <label>{{$category->category}}</label><input type="checkbox" name="category" value="{{$category->category}}">
+          </li>
+            @endforeach
+          </div>
+
+          <div class="save_post">
+            <button class = 'save' type="submit" name="button">Save</button>
+          </div>
+        </div>
+
+      </div>
+
+
 
 
       </form>
 
-  </div>
+
 
   </div>
   </div>
+</div>

@@ -4,6 +4,7 @@ var login_form = {
   },
 
   bindUiAction: function() {
+
     $('.login-main').click(function(){
        $(".log").addClass('active');
      });
@@ -46,14 +47,15 @@ var login_form = {
          if(filename){
            $('.first-step').removeClass('active');
            $('.second-step').addClass('active');
-         }
+         };
        });
 
-
-
-
-  }
+        $('.next').click(function(){
+          $('.second-step').removeClass('active');
+          $('.third-step').addClass('active');
+        });
 }
+};
 
 var tagInputGenerator = {
   construct: function() {

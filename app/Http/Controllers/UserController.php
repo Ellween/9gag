@@ -7,21 +7,25 @@ use Auth;
 use Image;
 use App\User;
 Use Hash;
+use App\Category;
 
 class UserController extends Controller
 {
     public function getProfile()
     {
-      return view('User.profile', array('user' => Auth::user()));
+      $categories = Category::all();
+      return view('User.profile', array('user' => Auth::user()), compact('categories'));
     }
 
     public function getPassword()
     {
-      return view('User.password', array('user' => Auth::user()));
+      $categories = Category::all();
+      return view('User.password', array('user' => Auth::user()),compact('categories'));
     }
 
     public function getAccount(){
-      return view('User.account' ,array('user' => Auth::user()) );
+      $categories = Category::all();
+      return view('User.account' ,array('user' => Auth::user()) ,compact('categories'));
     }
 
     public function storeProfile (Request $request)

@@ -25,12 +25,21 @@
           </div>
           <div class="form-group">
             <label for="category">Create Category</label>
-            <input type="text" class="form-control" id="category" name= "category">
+            <input type="text" class="form-control" id="category" name= "category" >
           </div>
           <div class="category_button">
             <button class = 'btn btn-primary' type="submit" name="button">Add Category</button>
           </div>
         </form>
+
+        <div class="izi">
+          @foreach ($categories as $category)
+            <li>
+          <img src="{{asset('images/category_images/' . $category->image)}}" alt="">
+          {{$category->category}}
+        </li>
+          @endforeach
+        </div>
       </div>
     </div>
   </div>
