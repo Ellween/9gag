@@ -14,6 +14,7 @@
 
 //Pages
 Route::get('/','PagesController@getIndex');
+Route::get('/post/{id}','PagesController@getSingle');
 
 
 // registraion and Login
@@ -22,6 +23,9 @@ Route::get('logout', 'Auth\LoginController@logout')->name('logout');
 
 //Upload Post
 Route::post('/upload','PostController@store');
+
+//Upload Comments
+Route::post('/upload/comments/{post}','CommentController@store');
 
 //user profile update
 Route::get('/settings/profile','UserController@getProfile');
