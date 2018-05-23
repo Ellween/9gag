@@ -16,11 +16,5 @@ class PagesController extends Controller
       return view('posts.post',compact('categories','posts'));
     }
 
-    public function getSingle($id)
-    {
-      $categories = Category::all();
-      $post = Post::find($id);
-      return view('posts.single',compact('post','categories'));
 
-    }
 }

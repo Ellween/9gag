@@ -54,6 +54,34 @@ var login_form = {
           $('.second-step').removeClass('active');
           $('.third-step').addClass('active');
         });
+
+        $('.add-comment').click(function(){
+          var comment_data = $('.comments-form').serialize();
+          var post_id = $('.comments-form').data('id');
+
+
+          $.ajax ({
+            headers: {
+              'X-CSRF-TOKEN': $('meta[name="csrf-token"]').attr('content')
+            },
+
+            method: 'POST',
+            url: '/upload/comments/' + post_id,
+            data: comment_data,
+
+            success: function(data) {
+              console.log(data);
+              $('.all-comments').append(data);
+            },
+            error: function(data) {
+              console.log('error');
+            }
+
+          });
+
+
+        });
+
 }
 };
 

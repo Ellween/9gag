@@ -7,7 +7,7 @@
       <h1>Login</h1>
       <p>Connect with social network</p>
     </div>
-
+{{--
     <div class="Fb-Google">
       <div class="fb">
         <h1 class = 'fb-h1'>Facebook</h1>
@@ -15,7 +15,7 @@
       <div class="Google">
         <h1 class = 'Google-h1'>Google</h1>
       </div>
-    </div>
+    </div> --}}
     <hr class = 'login-hr'>
     <div class="login-form-section">
       <form class="" action="{{ route('login') }}" method="POST">

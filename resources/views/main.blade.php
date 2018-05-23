@@ -21,7 +21,7 @@
 </div>
 
 
-      <section class = 'posts'>
+      <section class = 'posts-section'>
         @include('sidebars.left-side')
 
 
@@ -39,7 +39,7 @@
 
 
       <script src="https://ajax.aspnetcdn.com/ajax/jQuery/jquery-3.3.1.min.js"></script>
-      <script type="text/javascript" src = '/js/login.js'>
+      <script type="text/javascript" src = {{ url('/js/login.js') }}>
 
       </script>
   </body>

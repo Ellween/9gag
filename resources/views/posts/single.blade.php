@@ -8,7 +8,7 @@
 </div>
 
 <div class="comment-section">
-  <form class="" action="/upload/comments/{{$post->id}}" method="post" enctype="multipart/form-data">
+  <form class="comments-form" action="/upload/comments/{{$post->id}}" method="post" data-id ="{{$post->id}}" >
     @csrf
     <div class="user-picture">
       <img src = '/images/avatars/{{ Auth::user()->avatar}}'>
@@ -19,23 +19,14 @@
     </div>
 
     <div class="comment-button">
-      <button type="submit" name="add-comment">Post</button>
+      <button class = 'add-comment' type="button" name="add-comment">Post</button>
     </div>
   </form>
 </div>
 
   <div class="all-comments">
   @foreach($post->comments as $comment)
-    <div class="comment-list">
-      <div class="comment-author">
-        <img src = '/images/avatars/{{ Auth::user()->avatar}}'>
-      </div>
-      <div class="comment-desrciption">
-        <h5>{{Auth::user()->name}}</h5>
-        <p>{{$comment->comment}}</p>
-        <img src="{{asset('images/memes/' . $comment->meme  )}}" alt="">
-      </div>
-    </div>
+    @include('templates.templates')
   @endforeach
   </div>
 @endsection

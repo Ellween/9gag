@@ -14,7 +14,7 @@
 
 //Pages
 Route::get('/','PagesController@getIndex');
-Route::get('/post/{id}','PagesController@getSingle');
+Route::get('/post/{id}','CommentController@getSingle');
 
 
 // registraion and Login
