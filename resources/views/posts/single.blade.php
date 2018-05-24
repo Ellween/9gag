@@ -8,7 +8,7 @@
 </div>
 
 <div class="comment-section">
-  <form class="comments-form" action="/upload/comments/{{$post->id}}" method="post" data-id ="{{$post->id}}" >
+  <form class="comments-form" action="/upload/comments/{{$post->id}}" method="post" data-id ="{{$post->id}}" enctype="multipart/form-data">
     @csrf
     <div class="user-picture">
       <img src = '/images/avatars/{{ Auth::user()->avatar}}'>

@@ -45,7 +45,7 @@ class CommentController extends Controller
 
       $comment = Comment::create([
         'comment' => request('comment'),
-        // 'meme' => $meme_filename,
+        'meme' => $meme_filename,
         'post_id' => $post,
       ]);
 
