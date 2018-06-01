@@ -7,22 +7,39 @@
   <img src="{{asset('images/Pictures/' . $post->picture)}}" alt="">
 </div>
 
+@if(Auth::check())
+
 <div class="comment-section">
-  <form class="comments-form" action="/upload/comments/{{$post->id}}" method="post" data-id ="{{$post->id}}" enctype="multipart/form-data">
+  <form class="comments-form" type = 'hidden' action="/upload/comments/{{$post->id}}" method="post" data-id ="{{$post->id}}" enctype="multipart/form-data">
     @csrf
     <div class="user-picture">
-      <img src = '/images/avatars/{{ Auth::user()->avatar}}'>
+      <img src = '/images/avatars/{!! Auth::check() ?  Auth::user()->avatar : 'null' !!}'>
     </div>
-    <div class="comment-input">
-      <textarea name="comment" rows="8" cols="80" placeholder="Write a Comment"></textarea>
-      <input type="file" name="meme" value="">
+    <div class="add-comments-field">
+      <div class="comment-input">
+        <textarea name="comment" rows="4" cols="70" placeholder="Write a Comment"></textarea><br>
+      </div>
+
+      <div class="picture-input">
+        <input class = 'original-picture-input' type="file" name="meme" value="" id="myFile">
+        <img class = 'image-picture-upload' src="/images/upload/image-upload.png" alt="">
+      </div>
+
+      <div class="comment-button">
+        <button class = 'add-comment' type="button" name="add-comment">Post</button>
+      </div>
     </div>
 
-    <div class="comment-button">
-      <button class = 'add-comment' type="button" name="add-comment">Post</button>
-    </div>
   </form>
+
 </div>
+
+@else
+
+  <h3>Need To Register</h3>
+
+@endif
+
 
   <div class="all-comments">
   @foreach($post->comments as $comment)

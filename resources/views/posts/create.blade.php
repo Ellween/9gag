@@ -19,11 +19,11 @@
             <div class="upload_image">
             </div>
             <div class="pic-upload-container">
-              <p>Drop image to upload or</p>
+              {{-- <p>Drop image to upload or</p> --}}
               <button class='picture-upload-btn' type="button" name="button">Choose files...</button>
             </div>
           </div>
-
+{{--
           <div class="past-image URL">
             <img src="/images/upload/image-pic.png" alt="">
             <p>Pase image URL</p>
@@ -37,7 +37,7 @@
           <div class="create-meme URL">
             <img src="/images/upload/troll-face.png" alt="">
             <p>Male meme</p>
-          </div>
+          </div> --}}
         </div>
 
 

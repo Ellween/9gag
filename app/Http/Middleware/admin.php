@@ -3,6 +3,7 @@
 namespace App\Http\Middleware;
 
 use Closure;
+use Auth;
 
 class admin
 {
@@ -15,10 +16,21 @@ class admin
      */
     public function handle($request, Closure $next)
     {
-        if($request->user()->type != 2){
-          return redirect('/');
+      if(Auth::check()){
+        if(Auth::user()->type != 2){
+          return redirect('/fail');
         }
-        
+}        // if(Auth::user()->type == 2){
+        //   return redirect('/admin/category');
+        // }
+        else {
+          return redirect('/login');
+        }
+
         return $next($request);
+
+
+
     }
+
 }

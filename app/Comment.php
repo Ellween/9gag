@@ -10,6 +10,7 @@ class Comment extends Model
       'comment',
       'meme',
       'post_id',
+      'user_id',
     ];
 
     protected $table = 'comments';
@@ -17,5 +18,10 @@ class Comment extends Model
     public function posts()
     {
       return $this->belongsTo('App\Post');
+    }
+
+    public function user()
+    {
+      return $this->belongsTo('App\User');
     }
 }

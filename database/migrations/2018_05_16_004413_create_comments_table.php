@@ -18,6 +18,7 @@ class CreateCommentsTable extends Migration
             $table->text('comment');
             $table->string('meme')->nullable();
             $table->integer('post_id');
+            $table->integer('user_id');
             $table->timestamps();
         });
     }

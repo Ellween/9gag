@@ -10,10 +10,14 @@ use Image;
 class AdminController extends Controller
 {
 
+  public function fail()
+  {
+      return view('admin.Fail');
+  }
+
     public function index()
     {
-
-      $categories = Category::all();
+        $categories = Category::all();
       return view('admin.category_section',compact('categories'));
 
     }

@@ -26,6 +26,7 @@ Route::post('/upload','PostController@store');
 
 //Upload Comments
 Route::post('/upload/comments/{post}','CommentController@store');
+Route::post('/upload/commentPic/{id}','CommentController@uploadpic');
 
 //user profile update
 Route::get('/settings/profile','UserController@getProfile');
@@ -41,8 +42,9 @@ Route::post('/settings/account','UserController@storeaccount');
 //Update User profile
 
 
-// admin ylis space
-Route::get('/admin/index', 'AdminController@index');
-Route::get('/admin/category','AdminController@getCategory');
+// admin  space
+Route::get('/admin', 'AdminController@index')->middleware('admin');
+Route::get('/admin/category','AdminController@getCategory')->middleware('admin');
 Route::post('/admin/category','AdminController@storeCategory');
-Route::get('/admin/users','AdminController@getUsers');
+Route::get('/admin/users','AdminController@getUsers')->middleware('admin');
+Route::get('/fail','AdminController@fail');

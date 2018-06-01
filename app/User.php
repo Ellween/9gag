@@ -20,6 +20,7 @@ class User extends Authenticatable
         'password',
         'gender',
         'countires',
+        'avatar',
         'about','old_password',
         'new_password','avatar',
         'input_username',
@@ -33,4 +34,16 @@ class User extends Authenticatable
     protected $hidden = [
         'password', 'remember_token','old_password','new_password',
     ];
+
+    public function comments()
+    {
+      return $this->hasMany('App\Comment');
+    }
+
+    public function posts()
+    {
+    return $this->hasMany('App\Post');
+    }
+
+  
 }
